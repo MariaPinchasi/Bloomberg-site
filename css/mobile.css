@@ -1,0 +1,92 @@
+.navbar .main_nav .main_nav_up a{
+    font-size: 0.9rem;
+}
+.navbar .main_nav .main_nav_down ul li> a{
+    display: none;
+}
+.toggler{
+    visibility: visible;
+    
+}
+.navbar .main_nav .main_nav_down li .hamburger{
+    visibility: visible;
+}
+.toggler:checked + .category-nav-hidden{
+    visibility: visible;
+}
+.category-nav{
+    display: none;
+}
+.article .article_content .article_name{
+    font-size: 2.6rem;
+}
+.article .more_articles{
+    margin-top: 1rem;
+}
+.article .more_articles a{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+.main .sidebar_left{
+    display: none;
+}
+.main .sidebar_right{
+    display: none;
+}
+.main_container{
+    grid-template-columns: 1fr;
+}
+@media (max-width:600px) {
+    .navbar .main_nav .main_nav_up{
+        display: none;
+    }
+    .economics{
+        overflow: hidden;
+    }
+    .economics li >*:nth-child(4),
+    .economics li >*:nth-child(5),
+    .economics li >*:nth-child(6){
+        display: none;
+    }
+    .article{
+        grid-template-columns: 1fr;
+    }
+    .article .more_articles{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .article .more_articles a{
+        border-bottom: black solid 0.1rem;
+    }
+    .article .more_articles>*:last-child{
+        grid-column: 1 / span 2;
+        border: none;
+    }
+    .inner_articles .article{
+        grid-template-columns: 1fr;
+    }
+    .inner_articles .more_articles{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .inner_articles .more_articles>*:last-child{
+        grid-column: 1;
+        border-bottom: black dotted 0.1rem;
+    }
+    .inner_articles .more_articles a{
+        border-bottom: black dotted 0.1rem;
+        padding: 0.2rem 0;
+    }
+    .inner_articles_middle{
+        grid-template-columns: 1fr;
+    }
+    .inner_articles_down{
+        grid-template-columns: 1fr;
+    }
+    .inner_articles_down>*:nth-child(2),
+    .inner_articles_down>*:nth-child(3){
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+
+
+}
