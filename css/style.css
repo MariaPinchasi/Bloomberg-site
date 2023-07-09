@@ -200,9 +200,7 @@ a{
 }
 
 /* Economics */
-.economics{
-    overflow: hidden;
-}
+
 .economics a{
     font-size: 1.4rem;
     color: var(--dark-color);
